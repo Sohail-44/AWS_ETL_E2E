@@ -11,7 +11,7 @@ for bucket in all_buckets['Buckets']: # 'Buckets' is a key here that contains va
     print(bucket['Name']) # Each bucket again has a key called 'Name' that returns the value containing name of our bucket
 
 # Creating a sample csv file and upload it 
-squared_10 = pd.DataFrame({'x':[1, 2, 3, 4, 5, 6, 7, 8, 9], 'y' : [1, 4, 9, 16, 25, 36, 49, 64, 81]})
+squared_10 = pd.DataFrame({'x':[1, 2, 3, 4, 5, 6, 7, 8, 9,10], 'y' : [1, 4, 9, 16, 25, 36, 49, 64, 81,100]})
 squared_10.to_csv('squared_10.csv')
 
 # Uploading it to my data bucketn using the upload file method :  def upload_file(file_name, bucket, object_name=None):
